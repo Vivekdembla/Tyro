@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:src="@drawable/entry"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:id="@+id/frame"/>
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ladka"
+        app:layout_constraintLeft_toLeftOf="@id/frame"
+        app:layout_constraintRight_toRightOf="@id/frame"
+        app:layout_constraintTop_toTopOf="@id/frame"
+        android:layout_marginTop="5dp"
+        android:id="@+id/decoration"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/frame"
+        app:layout_constraintRight_toRightOf="@id/frame"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="60min"
+        android:textColor="@color/white"
+        android:textSize="8dp"
+        android:id="@+id/time_taken"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8dp"
+        android:text="Intermediate"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/frame"
+        app:layout_constraintBottom_toBottomOf="@id/frame"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/level"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/level"
+        app:layout_constraintLeft_toLeftOf="@id/level"
+        android:textSize="7dp"
+        android:textColor="@color/white"
+        android:text="With Jim"
+        android:id="@+id/trainer_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/trainer_name"
+        app:layout_constraintLeft_toLeftOf="@id/trainer_name"
+        android:textSize="8dp"
+        android:textColor="@color/white"
+        android:text="Cardio 101"
+        android:id="@+id/exercise_name"
+        android:textAllCaps="true"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
